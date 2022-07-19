@@ -1,0 +1,102 @@
+.presentationDiv {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-height: 550px;
+    height: 100vh;
+    background: url('../assets/presentation_background.jpg') center;
+    background-size: cover;
+    position: relative;
+}
+
+.navBar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+
+.leftSide > * {
+    font-size: 2em;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSide > * {
+    margin-left: 20px;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contentDiv img {
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.contentDiv h1 {
+    font-size: 3em;
+}
+
+.sectionDiv {
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContent {
+    padding-top: 15px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+}
+
+.progressDiv {
+    padding: 20px;
+    height: 80px;
+    font-weight: 500;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+}
+
+.progressTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progressBarContent {
+    left: 0px;
+    border-radius: inherit;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(0, 89, 255);
+    transition: width 200ms ease-in-out 2s;
+}
